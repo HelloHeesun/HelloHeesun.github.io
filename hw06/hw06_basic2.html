@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body id="signup">
+	<form>
+		<fieldset>
+			<legend>회원가입</legend>
+			<span>사용자 아이디</span>
+			<input id="username" type="text"/>
+			<input id="dup_check" type="button" value="중복체크" disabled/><br>
+			<span>비밀번호</span> <input id="pass1" type="password"><br>
+			<span>비밀번호 확인</span> <input id="pass2" type="password"><br>
+			<span>이름</span> <input type="text"><br>
+			<span>전화번호</span> <input type="tel"/><br>
+			<span>이메일</span> <input type="email"/><br>
+			<span>생일</span> <input type="date"/><br>
+			<span>연령대</span>
+			<select>
+				<option>10대 이하</option>
+				<option>20대 이하</option>
+				<option>30대 이하</option>
+				<option>40대 이하</option>
+				<option>50대 이상</option>
+			</select><br>
+			<span>관심분야</span>
+			<label>인문학 <input type="checkbox" value="humanity" name="interest"></label>
+			<label>교육 <input type="checkbox" value="education" name="interest"></label>
+			<label>예술 <input type="checkbox" value="art" name="interest"></label>
+			<label>컴퓨터 <input type="checkbox" value="computer" name="interest"></label>
+			<label>기타분야 <input type="checkbox" value="etc" name="interest"></label><br>
+			<span>배경 색상</span> <input type="color"/><br>
+			간단한 자기소개<br>
+			<textarea cols="30" rows="5">간단한 자기소개를 써주세요.</textarea>
+		</fieldset>
+		<input id="signup_button" type="submit" value="회원가입" disabled/>
+		<input id="reset2" type="button" value="취소" disabled/>
+	</form>
+</body>
+</html>
+<body id="order">
+<div class="head">서적 주문 양식</div>
+	<form action="">
+		<p>주문서</p>
+		<table>
+			<tr> <th>책 제목</th> <th>가격</th> <th>수량</th> <th>합계</th> </tr>
+			
+			<tr>
+				<td> 멀티미디어 배움터2.0 </td> <td> 25,000원 </td>
+				<td> <input type="text" size="2" value="0"/> </td>
+				<td> <input type="text" size="6" value="0"/> 원</td>
+			</tr>
+			
+			<tr>
+				<td> (알기 쉬운) 알고리즘 </td> <td> 24,000원 </td>
+				<td> <input type="text" size="2" value="0"/> </td>
+				<td> <input type="text" size="6" value="0"/> 원</td>
+			</tr>
+			
+			<tr>
+				<td> 비즈니스 정보 시스템 </td> <td> 28,000원 </td>
+				<td> <input type="text" size="2" value="0"/> </td>
+				<td> <input type="text" size="6" value="0"/> 원</td>
+			</tr>
+			
+			<tr>
+				<td> 합계 </td> <td> &nbsp; </td>
+				<td> <input type="text" size="2" value="0"/> </td>
+				<td> <input type="text" size="6" value="0"/> 원</td>
+			</tr>
+			
+		</table><br>
+		<input type="button" value="합계계산" disabled/>
+		<input type="reset" value="초기화" disabled/>
+		<input type="submit" value="주문하기" disabled/>
+	</form>
+</body>
+</html>
