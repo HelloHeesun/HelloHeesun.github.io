@@ -1,0 +1,48 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>13주차 2번</title>
+    <script src="./jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#football").click(function() {
+                $("img").attr("src", "./img/football.jfif");
+            });
+        });
+        $(document).ready(function() {
+            $("#baseball").click(function() {
+                $("img").attr("src", "./img/baseball.jfif");
+            });
+        });
+        $(document).ready(function() {
+            $("#basketball").click(function() {
+                $("img").attr("src", "./img/basketball.jfif");
+            });
+        });
+    </script>
+    <style>
+       section {
+           width: 350px;
+           text-align: center;
+       }
+       img {
+           max-width: 200px;
+           max-height: 200px;
+       }
+    </style>
+</head>
+
+<body>
+    <h1>당신이 좋아하는 스포츠는?</h1>
+    <section>
+        <button id="football">프로축구</button>
+        <button id="baseball">프로야구</button>
+        <button id="basketball">프로농구</button>
+        <div>
+        <p><img src="./img/white.png" alt="background"></p>
+        </div>
+    </section>
+</body>
+
+</html>
+ 
